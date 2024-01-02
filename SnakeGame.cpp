@@ -152,7 +152,6 @@ void Algorithm()
     int prev2X, prev2Y;
     tailX[0] = x;
     tailY[0] = y;
-
     for (int i = 1; i < nTail; i++)
     {
         prev2X = tailX[i];
@@ -162,7 +161,6 @@ void Algorithm()
         prevX = prev2X;
         prevY = prev2Y;
     }
-
     switch (dir)
     {
     case LEFT:
@@ -180,7 +178,6 @@ void Algorithm()
     default:
         break;
     }
-
     // Check for collisions with walls
     if (x < 0 || x >= width || y < 0 || y >= height)
         gameOver = true;
@@ -210,7 +207,6 @@ void Algorithm()
     }
 }
 
-#include <SFML/System.hpp> // Include SFML/System.hpp for threading
 
 void DrawGameOver()
 {
